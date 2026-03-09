@@ -5,22 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Sekar.io</title>
   <meta name="description" content="Product projects: B2B solutions, product management, and customer-focused development" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sekar.io/projects.html" />
+  <meta property="og:title" content="Projects | Sekar.io" />
+  <meta property="og:description" content="Product intuition, customer empathy, B2B thinking. Building products that solve real problems through technical depth and business acumen." />
+  <meta property="og:site_name" content="Sekar.io" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projects | Sekar.io" />
+  <meta name="twitter:description" content="Product intuition, customer empathy, B2B thinking. Building products that solve real problems through technical depth and business acumen." />
+  
+  <!-- Performance: Preload critical CSS -->
+  <link rel="preload" href="css/styles.css" as="style" />
+  <link rel="dns-prefetch" href="https://sekar.io" />
+  
   <link rel="stylesheet" href="css/styles.css" />
+  
+  <!-- Performance: Defer non-critical JavaScript -->
+  <script src="js/main.js" defer></script>
 </head>
 <body>
+  <!-- Skip to main content link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
   <!-- Navigation -->
   <div class="nav-container">
-    <nav>
-      <a href="index.html" class="nav-logo">sekar.io</a>
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="engineering.html">Engineering</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="ceramics.html">Ceramics</a></li>
-        <li><a href="writing.html">Writing</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+    <nav role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" aria-label="Sekar.io home">sekar.io</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <ul class="nav-links" id="nav-links" role="menubar">
+        <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+        <li role="none"><a href="engineering.html" role="menuitem">Engineering</a></li>
+        <li role="none"><a href="projects.html" role="menuitem">Projects</a></li>
+        <li role="none"><a href="ceramics.html" role="menuitem">Ceramics</a></li>
+        <li role="none"><a href="writing.html" role="menuitem">Writing</a></li>
+        <li role="none"><a href="about.html" role="menuitem">About</a></li>
+        <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -33,9 +56,10 @@
   </div>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <main id="main-content" role="main">
+  <section class="hero" aria-labelledby="hero-heading">
     <div class="container">
-      <h1>Projects</h1>
+      <h1 id="hero-heading">Projects</h1>
       <p class="hero-subtitle">Product Intuition • Customer Empathy • B2B Thinking</p>
       <p class="hero-description">
         Building products that solve real problems. Combining technical depth with 
@@ -116,16 +140,15 @@
       </div>
     </div>
   </section>
+  </main>
 
   <!-- Footer -->
-  <footer>
+  <footer role="contentinfo">
     <div class="container">
       <p>&copy; 2024 Sabaritha Sekar. All rights reserved.</p>
       <p><a href="contact.html">Get in touch</a> • <a href="writing.html">Read my writing</a></p>
     </div>
   </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
 

@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   if (navToggle) {
     navToggle.addEventListener('click', function() {
-      navLinks.classList.toggle('active');
+      const isExpanded = navLinks.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isExpanded);
     });
   }
   
