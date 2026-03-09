@@ -40,7 +40,7 @@ I've served as a committee member and panelist at the Grace Hopper Conference, d
 
 ## Find me
 
-- [GitHub](https://github.com/)
+- [GitHub](https://github.com/sabsekar24)
 - [LinkedIn](https://linkedin.com/in/sabaritha)
 - [Instagram](https://instagram.com/spells.and.bristles)
 - [Email](mailto:sabaritha.sekar@gmail.com)

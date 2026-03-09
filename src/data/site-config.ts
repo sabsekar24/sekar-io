@@ -46,7 +46,7 @@ const siteConfig: SiteConfig = {
     socialLinks: [
         {
             text: 'GitHub',
-            href: 'https://github.com/'
+            href: 'https://github.com/sabsekar24'
         },
         {
             text: 'LinkedIn',
